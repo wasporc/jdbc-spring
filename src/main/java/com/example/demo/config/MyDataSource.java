@@ -8,11 +8,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
 public class MyDataSource {
-    @Value("${db.url}")
+    @Value("${spring.datasource.url}")
     private String url;
-    @Value("${db.username}")
+    @Value("${spring.datasource.username}")
     private String name;
-    @Value("${db.password}")
+    @Value("${spring.datasource.password}")
     private String pass;
 
     @Bean
